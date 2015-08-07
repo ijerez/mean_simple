@@ -7,7 +7,8 @@ var bodyParser = require('body-parser');
 
 var mongoose = require('mongoose');
 require('./models/Posts');
-mongoose.connect('mongodb://localhost/news');
+//mongoose.connect('mongodb://localhost/news');
+mongoose.connect('mongodb://hexy:hexy@ds059712.mongolab.com:59712/flapper');
 
 require('./models/Comments');
 
